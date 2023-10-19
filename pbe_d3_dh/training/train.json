@@ -1,0 +1,132 @@
+{
+    "model": {
+        "descriptor": {
+            "type": "se_a",
+            "sel": "auto",
+            "rcut_smth": 0.5,
+            "rcut": 7.0,
+            "_comment": "modify according your system",
+            "neuron": [
+                25,
+                50,
+                100
+            ],
+            "resnet_dt": false,
+            "axis_neuron": 16,
+            "seed": 2019952485
+        },
+        "fitting_net": {
+            "neuron": [
+                240,
+                240,
+                240
+            ],
+            "resnet_dt": true,
+            "seed": 3217034696
+        },
+        "type_map": [
+            "O",
+            "H",
+            "C",
+            "S"
+        ]
+    },
+    "learning_rate": {
+        "type": "exp",
+        "start_lr": 0.001,
+        "decay_steps": 10000,
+        "_comment": "nope",
+        "stop_lr": 3.505266624882874e-08
+    },
+    "loss": {
+        "start_pref_e": 0.02,
+        "limit_pref_e": 1,
+        "start_pref_f": 1000,
+        "limit_pref_f": 1,
+        "start_pref_v": 0,
+        "limit_pref_v": 1
+    },
+    "training": {
+        "stop_batch": 2000000,
+        "seed": 223705953,
+        "disp_file": "lcurve.out",
+        "disp_freq": 100,
+        "numb_test": 10,
+        "save_freq": 1000,
+        "save_ckpt": "model.ckpt",
+        "disp_training": true,
+        "time_training": true,
+        "profiling": false,
+        "profiling_file": "timeline.json",
+        "training_data": {
+            "systems": [
+                "../init.000/",
+                "../init.001/",
+                "../init.002/",
+                "../init.003/",
+                "../init.004/",
+                "../init.005/",
+                "../init.006/",
+                "../init.007/",
+                "../init.008/",
+                "../init.009/",
+                "../init.010/",
+                "../init.011/",
+                "../init.012/",
+                "../init.013/",
+                "../init.014/",
+                "../init.015/",
+                "../init.016/",
+                "../init.017/",
+                "../init.018/",
+                "../init.019/",
+                "../init.020/",
+                "../init.021/",
+                "../init.022/",
+                "../init.023/",
+                "../init.024/",
+                "../init.025/",
+                "../sys.000.0/",
+                "../sys.000.1/",
+                "../sys.001.0/",
+                "../sys.001.1/",
+                "../sys.002.0/",
+                "../sys.002.1/",
+                "../sys.003.0/",
+                "../sys.003.1/",
+                "../sys.004.0/",
+                "../sys.004.1/",
+                "../sys.005.0/",
+                "../sys.005.1/",
+                "../sys.006.0/",
+                "../sys.006.1/",
+                "../sys.007.0/",
+                "../sys.007.1/",
+                "../sys.008.0/",
+                "../sys.008.1/",
+                "../sys.009.0/",
+                "../sys.009.1/",
+                "../sys.011.0/",
+                "../sys.011.1/",
+                "../sys.012.0/",
+                "../sys.012.1/",
+                "../sys.105.0/",
+                "../sys.105.1/",
+                "../sys.106.0/",
+                "../sys.106.1/",
+                "../sys.107.0/",
+                "../sys.107.1/",
+                "../sys.108.0/",
+                "../sys.108.1/",
+                "../sys.109.0/",
+                "../sys.109.1/",
+                "../sys.111.0/",
+                "../sys.111.1/",
+                "../sys.112.0/",
+                "../sys.112.1/"
+            ],
+            "set_prefix": "set",
+            "batch_size": 1
+        }
+    }
+}
